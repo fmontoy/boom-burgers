@@ -1,0 +1,30 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s linear;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  width: 100%;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Nunito';
+}

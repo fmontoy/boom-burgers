@@ -1,0 +1,12 @@
+<div class="column center middle">
+    <div class="home-picture">
+      <div class="home-header column">
+        <h1 class="h1 light">Boom Burgers</h1>
+        <p class="home-p light">Bienvenido al portal de nuestro restaurante. Si te registras podrás ver nuestro menú,
+          armar tu propia hamburguesa, y realizar un pedido.</p>
+      </div>
+    </div>
+    <div class="home-info row space-around">
+      <app-card *ngFor="let new of news" [card]="new"></app-card>
+    </div>
+</div>

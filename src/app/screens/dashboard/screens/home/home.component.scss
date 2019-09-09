@@ -1,0 +1,46 @@
+.jumbotron {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 410px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.home-picture {
+  background-image: url('src/assets/images/burger.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 10px 30px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  &::before{
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.home-header {
+  position: relative;
+  z-index: 1;
+}
+
+.home-info {
+  max-width: 1300px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.home-p {
+  margin-top: 30px;
+  width: 500px;
+  font-size: 25px;
+}

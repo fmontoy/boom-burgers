@@ -1,0 +1,13 @@
+@import 'src/scss/colors';
+@import 'src/scss/variables';
+
+.footer {
+  background-color: $thunderbird;
+  box-shadow: $footer-shadow;
+  height: 70px;
+}
+
+.footer-content {
+  color: white;
+  font-weight: bolder;
+}
