@@ -1,0 +1,46 @@
+@import './colors';
+
+.input-content {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+
+  label {
+    color: $rain;
+  }
+}
+
+.primary-input {
+  margin-top: 5px;
+  border:none;
+  border-bottom: 2px solid $rain;
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.submit-button {
+  margin: 20px 0;
+  border-radius: 15px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 300px;
+  height: 40px;
+  background-color: $gamboge;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.submit-button:hover {
+  box-shadow: 0 3px 15px rgba(0,0,0,0.5)
+}
+
+.submit-button:active {
+  background-color: $gamboge-dark;
+}
+
+.submit-button:disabled {
+  background-color: $button-disabled;
+  color: gray;
+}

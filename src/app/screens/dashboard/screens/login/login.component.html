@@ -1,0 +1,16 @@
+<div class="row center middle">
+  <form class="login-container column center middle" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h1>Iniciar sesión</h1>
+    <div class="input-content">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" formControlName="email" class="primary-input">
+    </div>
+
+    <div class="input-content">
+        <label for="password">Password</label>
+        <input type="password" name="email" id="email" formControlName="password" class="primary-input">
+    </div>
+
+    <button type="submit" class="submit-button" [disabled]="!loginForm.valid">Ingresar</button>
+  </form>
+</div>
