@@ -1,0 +1,6 @@
+<div class="column">
+  <h1 class="h1 menu-title">Disfruta de nuestro menú</h1>
+  <div class="row wrap space-around" *ngIf="burgers">
+    <app-burger-card *ngFor="let burger of burgers" [burger]="burger"></app-burger-card>
+  </div>
+</div>

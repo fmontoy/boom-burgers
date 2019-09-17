@@ -1,0 +1,30 @@
+<div class="column" >
+  <div class="row wrap space-around" *ngIf="burgers | async as burger">
+      <table class="table" *ngIf="burger.length > 0">
+          <tr class="tr">
+            <th class="td">Producto</th>
+            <th class="td">Precio</th>
+          </tr>
+          <tr *ngFor="let burger of burgers | async" class="tr">
+            <td class="td">{{burger.name}}</td>
+            <td class="td">{{20000|currency}}</td>
+          </tr>
+      </table>
+      <span *ngIf="burger.length === 0" class="span">No has hecho compras por el momento</span>
+  </div>
+
+  <form [formGroup]="form" class="column center middle form-container" (ngSubmit)="buy()">
+    <p>Por favor ingresa los siguientes datos para finalizar tu compra</p>
+      <div class="input-content">
+        <label>Celular</label>
+        <input type="number" class="primary-input" formControlName="phone">
+      </div>
+
+      <div class="input-content">
+          <label>Dirección de residencia</label>
+          <input type="text" formControlName="address" class="primary-input">
+      </div>
+      <button type="submit" class="primary-button">Comprar</button>
+    </form>
+
+</div>

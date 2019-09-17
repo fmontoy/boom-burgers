@@ -1,0 +1,9 @@
+<div class="card column">
+  <img src="assets/images/menu/{{burger.image}}.jpg" [alt]="burger.name" class="card-image">
+  <div class="card-content column">
+    <span class="card-title">{{burger.name}}</span>
+    <p>{{burger.description}}</p>
+    <hr class="horizontal-line">
+    <button (click)="buyBurger()" class="button-buy">Comprar</button>
+  </div>
+</div>

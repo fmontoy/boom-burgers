@@ -5,8 +5,19 @@
         <img src="assets/images/brand.svg" alt="Brand logo" class="brand-logo">
       </a>
     </li>
-    <li>
+    <li *ngIf="!token">
       <a class="light login-anchor" [routerLink]="['/dashboard/login']" routerLinkActive="router-link-active" >Log In</a>
     </li>
+    <div class="row icons-navbar-container space-around" *ngIf="token">
+      <li>
+        <button (click)="logout()"><img src="assets/images/out.svg" alt="Icono para cerrar sesión" class="navbar-icon"></button>
+      </li>
+
+      <li>
+        <a [routerLink]="['/dashboard/buy']" routerLinkActive="router-link-active" ><img src="assets/images/shopping.svg" alt="Shopping car icon" class="navbar-icon">
+          <span class="shopping-size">{{burgers}}</span>
+        </a>
+      </li>
+    </div>
   </ul>
 </nav>

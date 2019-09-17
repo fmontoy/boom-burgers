@@ -1,16 +1,8 @@
-.jumbotron {
-  width: 1000px;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  height: 410px;
-  max-width: 1000px;
-  width: 100%;
-}
-
 .home-picture {
   background-image: url('src/assets/images/burger.jpg');
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 10px 30px;
   position: relative;
   width: 100%;
@@ -43,4 +35,11 @@
   margin-top: 30px;
   width: 500px;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .home-p {
+    font-size: 20px;
+    width: fit-content;
+  }
 }
